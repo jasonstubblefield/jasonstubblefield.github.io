@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Personal Website</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: space-between;
-        }
-        .main-content {
-            width: 60%;
-            padding: 1em;
-        }
-        .right-rail {
-            width: 35%;
-            padding: 1em;
-            border-left: 1px solid #ccc;
-        }
-        .block {
-            margin-bottom: 2em;
-        }
-    </style>
+    <title>My Personal Website | Jason Stubblefield</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="main-content">
-    <h1>Professional Information</h1>
-    <p>Hello, welcome to my personal website! I'm a professional [your profession]...</p>
-    <!-- You can add more sections about your professional life here -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="my-4">Professional Information</h1>
+            <img src="IMG_3131.jpeg" class="rounded-circle float-left mr-3" alt="Your Headshot" width="150" height="150">
+            <p>Hello, I'm Jason Stubblefield, welcome to my personal website! I'm a search engine architect, technologist and software developer currently working at <a href="https://www.hbs.edu/" >Harvard Business School</a>.</p>
+            <p>On this web page you can find information about my various projects and other interesting links.</p>
+            <p><i>The views and opinions expressed here are solely my own and do not reflect the views or policies of my employer or clients.</i></p>
+            <hr />
+            <!-- You can add more sections about your professional life here -->
+        </div>
+
+        <div class="col-md-4">
+            <div class="card my-4">
+                <h5 class="card-header">Blogroll</h5>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li><a href="https://blog.recipesaint.com">Recipe Saint</a></li>
+                        <li><a href="https://www.uptownvagabond.com">Uptown Vagabond</a></li>
+                        <!-- Add more blog sites as required -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <h5 class="card-header">Projects</h5>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li><a href="http://www.recipesaint.com">Recipe Search</a></li>
+                        <li><a href="http://www.prograph.io">NLP API</a></li>
+                        <!-- Add more projects as required -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <h5 class="card-header">Open Source</h5>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li><a href="https://github.com/jasonstubblefield/Scrapy_site_to_disk">Simple Scrapy Site Crawler</a></li>
+                        <li><a href="https://github.com/jasonstubblefield/installer_aws_solr_9.1.1">Ansible Solr Installer</a></li>
+                        <li><a href="https://github.com/jasonstubblefield/installer_aws_solr_9.1.1">Terraform Solr Installer</a></li>
+                        <li><a href="#">NLP Autosuggest Generator</a></li>
+                        <!-- Add more friends as required -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <h5 class="card-header">Friends</h5>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li><a href="https://www.kclibrary.org">KC Public Library</a></li>
+                        <li><a href="https://www.kemperart.org">Kemper Museum</a></li>
+                        <li><a href="https://labodegakc.com">La Bodega</a></li>
+                        <!-- Add more friends as required -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="right-rail">
-    <div class="block">
-        <h2>Blogroll</h2>
-        <ul>
-            <li><a href="http://blogsite1.com">Blog Site 1</a></li>
-            <li><a href="http://blogsite2.com">Blog Site 2</a></li>
-            <!-- Add more blog sites as required -->
-        </ul>
-    </div>
-
-    <div class="block">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="http://project1.com">Project 1</a></li>
-            <li><a href="http://project2.com">Project 2</a></li>
-            <!-- Add more projects as required -->
-        </ul>
-    </div>
-
-    <div class="block">
-        <h2>Bireme</h2>
-        <p>Content about Bireme goes here.</p>
-    </div>
-
-    <div class="block">
-        <h2>Friends</h2>
-        <ul>
-            <li><a href="http://friend1.com">Friend 1</a></li>
-            <li><a href="http://friend2.com">Friend 2</a></li>
-            <!-- Add more friends as required -->
-        </ul>
-    </div>
-</div>
+<!-- Bootstrap JS and jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
